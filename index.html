@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Jumper Ball Case Opening</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <div id="menu">
+        <input type="button" value="$ PLAY $" id="play" onclick="window.location='opening.html'">
+        <div id="stats">
+            <div id="money-display">100 руб</div>
+            <input type="button" value="RESET" id="reset-inventory">
+        </div>
+    </div>
+
+
+    <div id="inventory">
+        <h1 id="inventory-header">Collection</h1>
+    </div>
+
+
+    <audio loop autoplay id="bg-audio">
+        <source src="sounds/casino_ambient.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio loop autoplay id="bg-music">
+        <source src="sounds/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="balls.js"></script>
+    <script src="sounds.js"></script>
+    <script src="storage.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

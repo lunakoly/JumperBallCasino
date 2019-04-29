@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Jumper Ball Case Opening</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="opening.css">
+</head>
+
+<body>
+    <div id="screen">
+        <input type="button" value="BACK" id="back" onclick="window.location='index.html'">
+
+        <div id="way">
+            <div id="case-selector"></div>
+        </div>
+
+        <div id="controls">
+            <input type="button" value="$ ROLL (15 руб) $" id="play">
+            <div id="stats">
+                <div id="money-display">100 руб</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="inventory">
+        <h1 id="inventory-header">Possible awards</h1>
+    </div>
+
+    <!-- black background -->
+    <div id="black-bg"></div>
+    <img src="" alt="" id="opening-effect">
+    <div id="opening-title"></div>
+    <div id="opening-case"></div>
+    <input type="button" id="opening-close" value="gg wp izi">
+    <input type="button" id="opening-sell">
+
+
+    <audio loop autoplay id="bg-audio">
+        <source src="sounds/casino_ambient.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio loop autoplay id="bg-music">
+        <source src="sounds/music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="balls.js"></script>
+    <script src="cases.js"></script>
+    <script src="sounds.js"></script>
+    <script src="storage.js"></script>
+    <script src="opening.js"></script>
+</body>
+
+</html>

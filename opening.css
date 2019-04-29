@@ -1,0 +1,174 @@
+#screen {
+    background: gray;
+    margin: 100px;
+    padding: 10px 0;
+    width: calc(100% - 220px);
+    display: inline-table;
+
+    border-radius: 20px;
+    border: 10px solid black;
+    overflow: hidden;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+}
+
+#way {
+    background-color: #333;
+    height: 170px;
+    width: 100%;
+
+    margin: 30px 0;
+    position: relative;
+}
+
+#case-selector {
+    width: 170px;
+    height: 170px;
+    background-color: rgba(255, 255, 0, .2);
+    border-radius: 10px;
+
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -10px;
+
+    border: 10px dotted gold;
+    z-index: 1;
+}
+
+#inventory {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 800px) {
+    #screen {
+        margin: 0;
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    #controls {
+        display: block;
+    }
+
+    #stats {
+        margin: 0;
+        display: block;
+    }
+
+    #play {
+
+    }
+
+    #money-display {
+
+    }
+}
+
+
+.rolling-case {
+    width: 170px;
+    height: 170px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    position: absolute;
+}
+
+#black-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    z-index: 2;
+    background: rgba(0, 0, 0, .9);
+    display: none;
+}
+
+#opening-case {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    width: 0;
+    height: 0;
+
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 3;
+
+    transition: all 300ms ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+
+#opening-effect {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 4;
+}
+
+#opening-title {
+    display: none;
+
+    position: absolute;
+    left: 50%;
+    top: 30%;
+
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    font-family: monospace;
+    font-size: 39px;
+    color: white;
+
+    text-shadow: 2px 2px 0 #88f;
+}
+
+#opening-close {
+    display: none;
+
+    position: absolute;
+    left: 50%;
+    top: 70%;
+
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+#opening-sell {
+    display: none;
+
+    position: absolute;
+    left: 50%;
+    top: calc(70% + 80px);
+
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+.inventory-glass {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}

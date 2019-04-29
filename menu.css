@@ -1,0 +1,38 @@
+#menu {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+#play {
+    font-size: 40px;
+}
+
+
+@media (max-width: 500px) {
+    #menu {
+        display: block;
+    }
+
+    #stats {
+        margin: 0;
+        display: block;
+    }
+
+    #play {
+
+    }
+
+    #money-display {
+
+    }
+}

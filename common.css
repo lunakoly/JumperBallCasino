@@ -1,0 +1,154 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    background-image: url(img/casino_white.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100% auto;
+    background-color: white;
+}
+
+input[type="button"] {
+    padding: 10px;
+    background-color: orange;
+
+    border: 4px solid black;
+    border-radius: 10px;
+    -webkit-appearance: none;
+
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 23px;
+
+    box-shadow: 5px 5px 0 #88f;
+    text-shadow: 2px 2px 0 white;
+    margin: 10px;
+
+    transition: background-color 100ms ease, transform 300ms ease;
+}
+
+input[type="button"]:focus {
+    outline: none;
+}
+
+input[type="button"]:hover {
+    background-color: #aaffaa;
+    transform: rotateZ(360deg);
+}
+
+input[type="button"]:active {
+    background-color: red;
+}
+
+#money-display {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 23px;
+
+    color: white;
+    text-shadow: 2px 2px 0 black;
+    background-color: gray;
+
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    flex-grow: 0;
+    display: inline-block;
+}
+
+
+#inventory {
+    background: gray;
+    margin: 100px;
+    padding: 10px;
+    width: calc(100% - 240px);
+    display: inline-table;
+
+    border-radius: 20px;
+    border: 10px solid black;
+}
+
+.inventory-cell {
+    display: inline-block;
+    overflow: hidden;
+
+    margin: 10px;
+    width: calc(20% - 20px);
+
+    background: #333;
+    box-shadow: 2px 2px 0 #88f;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+}
+
+.inventory-cell:after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+}
+
+#inventory-header {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: monospace;
+    text-shadow: 1px 1px 0 white;
+}
+
+.inventory-item-amount {
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    top: 0;
+
+    color: #ddd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: monospace;
+    text-shadow: 3px 3px 0 black;
+}
+
+.inventory-sell-item-button.inventory-sell-item-button {
+    position: absolute;
+    padding: 4px;
+    margin: 10px 0;
+    bottom: 0;
+    left: 50%;
+
+    width: calc(100% - 20px);
+
+    opacity: 0.07;
+    font-size: 14px;
+    border-width: 2px;
+    transform: translateX(-50%);
+
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+.inventory-sell-item-button.inventory-sell-item-button:hover {
+    opacity: 1;
+    transform: translateX(-50%);
+}
+
+
+@media (max-width: 800px) {
+    #inventory {
+        margin: 0;
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 550px) {
+    .inventory-cell {
+        width: calc(33.3333% - 20px);
+    }
+}
